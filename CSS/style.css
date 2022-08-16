@@ -167,19 +167,29 @@ input {
   padding: 20px 5px;
 }
 
+.fonctionnement-card:hover {
+    background-color: #f5ecfe;
+
+}
+
+
 .fonctionnement-card-text {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 .fonctionnement-card p {
-  border-radius: 50%;
-  background-color: #9356DC;
-  color: white;
-  padding: 2px 8px;
-  margin-left: -16px;
-  margin-right: 20px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+    padding: 2px 8px;
+    margin-left: -16px;
+    margin-right: 20px;
 }
 
+.fonctionnement-card:hover i {
+
+    color: #9356DC;
+}
 
 
 /*************** RESTAURANT LIST ***************/
