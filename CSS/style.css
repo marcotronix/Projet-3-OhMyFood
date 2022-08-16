@@ -50,6 +50,9 @@ h3 {
   padding-top: 15px;
 }
 
+/*SEARCH FORM*/
+
+
 button {
   background: linear-gradient(#9356DC, #FF79DA);
   padding: 15px 10px;
@@ -132,7 +135,7 @@ input {
   margin-top: 30px;
 }
 
-/************* FONC **********/
+/************* FONCTIONNEMENT **********/
 .fonctionnement {
   font-size: 22px;
 }
@@ -176,7 +179,7 @@ input {
 
 
 
-/*************** RESTAURANT ***************/
+/*************** RESTAURANT LIST ***************/
 .restaurants {
   background-color: #f2f2f2;
   padding-top: 30px;
@@ -375,6 +378,77 @@ input {
   animation: loading_menu 1000ms ease-in-out 400ms backwards;
 }
 
+
+/* *************** MENU ANIM ******************* */
+
+@keyframes check_menu {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+@keyframes rotation_icon {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes price {
+  from {
+    transform: translateX(0);
+    transform-origin: right;
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+@keyframes width {
+  to {
+    max-width: 60%;
+  }
+}
+
+.fa-circle-check {
+  color: white;
+  display: block;
+  padding: 30px 20px;
+}
+
+.starter-element, .main-dishes-element, .dessert-element {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.starter-element-information p, .main-dishes-element-information p, .dessert-element-information p {
+  text-overflow: ellipsis;
+}
+.starter-element .check-block, .main-dishes-element .check-block, .dessert-element .check-block {
+  width: 60px;
+  height: 100%;
+  background-color: #99E2D0;
+  position: absolute;
+  right: -60px;
+  bottom: 0;
+}
+.starter-element:hover .price, .main-dishes-element:hover .price, .dessert-element:hover .price {
+  animation: price 800ms linear 100ms both;
+}
+.starter-element:hover .check-block, .main-dishes-element:hover .check-block, .dessert-element:hover .check-block {
+  animation: check_menu 1s linear both;
+}
+.starter-element:hover .check-block i, .main-dishes-element:hover .check-block i, .dessert-element:hover .check-block i {
+  animation: rotation_icon 1s ease-in-out both;
+}
+.starter-element:hover .dish-subtitle, .main-dishes-element:hover .dish-subtitle, .dessert-element:hover .dish-subtitle {
+  animation: width 1s linear both;
+}
+.starter-element:hover .starter-element-title, .starter-element:hover .dessert-element-title, .starter-element:hover .main-dishes-element-title, .main-dishes-element:hover .starter-element-title, .main-dishes-element:hover .dessert-element-title, .main-dishes-element:hover .main-dishes-element-title, .dessert-element:hover .starter-element-title, .dessert-element:hover .dessert-element-title, .dessert-element:hover .main-dishes-element-title {
+  animation: width 1s linear both;
+}
 
 
 /* FOOTER */
