@@ -222,6 +222,7 @@ input {
   border-top-right-radius: 25px;
 }
 .restaurant-new-indicator {
+  animation: blinker 1s linear infinite;
   position: absolute;
   top: 5%;
   right: 5%;
@@ -230,6 +231,13 @@ input {
   color: #008766;
   padding: 5px;
   font-size: 0.7em;
+}
+@keyframes blinker {
+  
+    10% {
+    opacity: 0.5;
+  }
+   
 }
 
 

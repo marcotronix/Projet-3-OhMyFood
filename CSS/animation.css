@@ -7,7 +7,7 @@
   height: 100vh;
   background: linear-gradient(#ffffff, #b4b4b4);
   opacity: 0;
-  animation: loading_anim 300s;
+  animation: loading_anim 3s;
 }
 
 
@@ -127,6 +127,7 @@
 /*spinner test*/
 
 
+/*
 .lds-roller {
   display: inline-block;
   position: relative;
@@ -233,6 +234,7 @@
     transform: rotate(360deg);
   }
 }
+*/
 
 
 
