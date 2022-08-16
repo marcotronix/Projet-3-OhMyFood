@@ -1,0 +1,72 @@
+
+
+
+/*******************  DESKTOP **********************/
+@media screen and (min-width: 768px) {
+ 
+  .fonctionnement-title h2{
+    text-align: center;
+  }
+    
+    .fonctionnement-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .fonctionnement-card {
+      max-width: 30%;
+    }
+
+  
+    .restaurants-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+          
+    }
+
+    /* div {
+      display: flex;
+  } */
+    
+    .restaurant-title {
+      margin-left: 10px;
+    }
+  
+
+/* FOOTER */
+
+
+    footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .presentation-menu {
+      height: 350px;
+      margin: auto;
+    }
+    .presentation-menu-img {
+      z-index: -1;
+      overflow: hidden;
+    }
+  }
+
+
+
+/*******************  TABLET   **********************/
+
+/* 
+  
+@media screen and (max-width: 992px) {
+    .restaurants-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+   */
+ 
