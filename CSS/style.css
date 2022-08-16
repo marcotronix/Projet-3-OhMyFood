@@ -139,6 +139,9 @@ input {
 .fonctionnement {
   font-size: 22px;
 }
+.fonctionnement h3 {
+  font-size: 18px;
+}
 .fonctionnement-title {
   margin-left: 10px;
   margin-bottom: 15px;
@@ -156,7 +159,7 @@ input {
   align-items: center;
   border: none;
   width: 90%;
-  border-radius: 15px;
+  border-radius: 25px;
   background-color: #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
   margin-top: 10px;
@@ -172,8 +175,8 @@ input {
   border-radius: 50%;
   background-color: #9356DC;
   color: white;
-  padding: 2px 6px;
-  margin-left: -10px;
+  padding: 2px 8px;
+  margin-left: -16px;
   margin-right: 20px;
 }
 
