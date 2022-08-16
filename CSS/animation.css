@@ -87,3 +87,41 @@
     transform: translate(24px, 0);
   }
 }
+
+
+/************************ FAV HEART ANIM  **********************/
+
+
+.fa-heart {
+  font-size: 24px;
+}
+
+.container_heart {
+  position: relative;
+}
+
+.heart_empty {
+  position: absolute;
+  -webkit-text-stroke: 1px white;
+  transition: 0.5s ease;
+}
+.heart_full {
+  opacity: 0;
+  display: block;
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.4s ease-in;
+}
+
+
+.container_heart:hover .heart_empty {
+  opacity: 0;
+}
+
+.container_heart:hover .heart_full {
+  opacity: 1;
+}
+
+
+
