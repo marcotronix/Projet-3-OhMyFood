@@ -1,4 +1,13 @@
+/*******************  TABLET   **********************/
 
+ 
+  
+@media screen (min-width: 768px) and (max-width: 992px) {
+    .restaurants-container {
+      display: flex;
+      grid-template-columns: 2fr 2fr;
+    }
+  }
 
 
 /*******************  DESKTOP **********************/
@@ -28,9 +37,7 @@
           
     }
 
-    /* div {
-      display: flex;
-  } */
+   
     
     .restaurant-title {
       margin-left: 10px;
@@ -58,15 +65,6 @@
 
 
 
-/*******************  TABLET   **********************/
 
-/* 
-  
-@media screen and (max-width: 992px) {
-    .restaurants-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-   */
+   
  
