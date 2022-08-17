@@ -1,0 +1,35 @@
+/*******************  TABLET   **********************/
+
+ 
+  
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .restaurants-container {
+      display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+/*      grid-template-columns: 2fr 1fr;*/
+      
+       
+    }
+    .restaurant {  padding: 10px 10px 10px 10px;}
+
+body {
+    
+    background: red;
+}
+    
+    .fonctionnement h2 {
+        text-align: center;
+         font-size: 1.4em;
+        
+    }
+    
+     }
+
+.restaurant-title h4 {
+    
+     text-align: center;
+    font-size: 1.4em;
+    
+}

@@ -1,8 +1,11 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,400&family=Shrikhand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Shrikhand&display=swap');
 
 
 /*MAIN*/
+
+
+
 
 * {
   box-sizing: border-box;
@@ -52,8 +55,41 @@ h3 {
 
 /*SEARCH FORM*/
 
+.search-form {
+    background-color: #eaeaea;
+    /*  border-top: solid 4px #cecece;*/
+
+    /*    A VERIFIER*/
+
+
+    box-shadow: inset 0px 2px 5px 2px #cbcbcb;
+
+    padding: 20px;
+    margin-top: 15px;
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+input {
+    border: none;
+    background-color: #eaeaea;
+    text-align: center;
+
+
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+
+/* END SEARCH FORM*/
+
 
 button {
+/*
   background: linear-gradient(#9356DC, #FF79DA);
   padding: 15px 10px;
   border-radius: 25px;
@@ -66,19 +102,33 @@ button {
   align-items: center;
   width: 220px;
   font-size: 1.05em;
+*/
 }
-button:hover {
-  background: linear-gradient(#ae80e5, #fface8);
+
+
+.explore-button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 15px 10px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  font-size: 1.05em;
+  margin-top: 30px;
+}
+
+.explore-button:hover {
+  background: linear-gradient(#fface8, #ae80e5);
   transform: scale(1.02);
   transition: 0.3s;
 }
 
-input {
-  border: none;
-  background-color: #eaeaea;
-  text-align: center;
-  font-size: 1.2em;
-}
+
 
 .header-pages {
   display: grid;
@@ -95,18 +145,7 @@ input {
   background-color: #f2f2f2;
  
 }
-.presentation-search {
-  background-color: #eaeaea;
-/*  border-top: solid 4px #cecece;*/
-    
-/*    A VERIFIER*/
-    
-    
-        box-shadow: inset  0px 2px 5px 2px #cbcbcb;
-   
-  padding: 20px;
-  margin-top: 15px;
-}
+
 .presentation-text {
   background-color: #f2f2f2;
   padding: 40px 30px;
@@ -119,21 +158,7 @@ input {
   margin-top: 20px;
   font-size: 1.1rem;
 }
-.presentation-button {
-  background: linear-gradient(#9356DC, #FF79DA);
-  padding: 15px 10px;
-  border-radius: 25px;
-  border: none;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 220px;
-  font-size: 1.05em;
-  margin-top: 30px;
-}
+
 
 /************* FONCTIONNEMENT **********/
 .fonctionnement {
@@ -212,6 +237,7 @@ input {
   height: 250px;
   background-color: white;
   margin: 20px auto;
+   
 }
 .restaurant-img-container {
   height: 70%;
@@ -331,7 +357,7 @@ input {
 }
 
 .order-button {
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#FF79DA, #9356DC);
   padding: 15px 10px;
   border-radius: 25px;
   border: none;
@@ -347,129 +373,7 @@ input {
 
 
 
-/* *************** MENU LIST ANIM ******************* */
 
-@keyframes loading_menu {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.starter-element:nth-child(1) {
-  animation: loading_menu 1000ms ease-in-out 100ms backwards;
-}
-.starter-element:nth-child(2) {
-  animation: loading_menu 1000ms ease-in-out 200ms backwards;
-}
-.starter-element:nth-child(3) {
-  animation: loading_menu 1000ms ease-in-out 300ms backwards;
-}
-.starter-element:nth-child(4) {
-  animation: loading_menu 1000ms ease-in-out 400ms backwards;
-}
-
-.main-dishes-element:nth-child(1) {
-  animation: loading_menu 1000ms ease-in-out 100ms backwards;
-}
-.main-dishes-element:nth-child(2) {
-  animation: loading_menu 1000ms ease-in-out 200ms backwards;
-}
-.main-dishes-element:nth-child(3) {
-  animation: loading_menu 1000ms ease-in-out 300ms backwards;
-}
-.main-dishes-element:nth-child(4) {
-  animation: loading_menu 1000ms ease-in-out 400ms backwards;
-}
-
-.dessert-element:nth-child(1) {
-  animation: loading_menu 1000ms ease-in-out 100ms backwards;
-}
-.dessert-element:nth-child(2) {
-  animation: loading_menu 1000ms ease-in-out 200ms backwards;
-}
-.dessert-element:nth-child(3) {
-  animation: loading_menu 1000ms ease-in-out 300ms backwards;
-}
-.dessert-element:nth-child(4) {
-  animation: loading_menu 1000ms ease-in-out 400ms backwards;
-}
-
-
-/* *************** MENU ANIM ******************* */
-
-@keyframes check_menu {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-60px);
-  }
-}
-@keyframes rotation_icon {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes price {
-  from {
-    transform: translateX(0);
-    transform-origin: right;
-  }
-  to {
-    transform: translateX(-60px);
-  }
-}
-@keyframes width {
-  to {
-    max-width: 60%;
-  }
-}
-
-.fa-circle-check {
-  color: white;
-  display: block;
-  padding: 30px 20px;
-}
-
-.starter-element, .main-dishes-element, .dessert-element {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-.starter-element-information p, .main-dishes-element-information p, .dessert-element-information p {
-  text-overflow: ellipsis;
-}
-.starter-element .check-block, .main-dishes-element .check-block, .dessert-element .check-block {
-  width: 60px;
-  height: 100%;
-  background-color: #99E2D0;
-  position: absolute;
-  right: -60px;
-  bottom: 0;
-}
-.starter-element:hover .price, .main-dishes-element:hover .price, .dessert-element:hover .price {
-  animation: price 800ms linear 100ms both;
-}
-.starter-element:hover .check-block, .main-dishes-element:hover .check-block, .dessert-element:hover .check-block {
-  animation: check_menu 1s linear both;
-}
-.starter-element:hover .check-block i, .main-dishes-element:hover .check-block i, .dessert-element:hover .check-block i {
-  animation: rotation_icon 1s ease-in-out both;
-}
-.starter-element:hover .dish-subtitle, .main-dishes-element:hover .dish-subtitle, .dessert-element:hover .dish-subtitle {
-  animation: width 1s linear both;
-}
-.starter-element:hover .starter-element-title, .starter-element:hover .dessert-element-title, .starter-element:hover .main-dishes-element-title, .main-dishes-element:hover .starter-element-title, .main-dishes-element:hover .dessert-element-title, .main-dishes-element:hover .main-dishes-element-title, .dessert-element:hover .starter-element-title, .dessert-element:hover .dessert-element-title, .dessert-element:hover .main-dishes-element-title {
-  animation: width 1s linear both;
-}
 
 
 /* FOOTER */

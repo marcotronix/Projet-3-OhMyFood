@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/animation.css" />
-    <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/style_desktop.css" />
+     <link rel="stylesheet" href="CSS/style_tablet.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
 
     <script src="https://kit.fontawesome.com/a57fc1ff54.js" crossorigin="anonymous"></script>
 
@@ -61,7 +63,7 @@
 
 
     <header class="header-index">
-        <div class="header-index__logo-container">
+        <div class="logo-container">
             <img class="logo-ohmyfood" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood-Logo">
         </div>
     </header>
@@ -70,19 +72,25 @@
 
     <main>
 
-        <section class="presentation">
+        
 <!--search-->
-            <div class="presentation-search">
+           <section class="search">
+            <div class="search-form">
                 <form method="POST" action="index.php">
                     <i class="fas fa-map-marker-alt location-icon"></i>
-                    <input type="text" placeholder="Paris, Belleville" class="location-button">
+                    <input type="text" placeholder="Paris, Belleville" class="input-form">
                 </form>
-<!--end search -->
+
             </div>
+    </section>
+           
+           <!--end search -->
+            
+            <section class="presentation">
             <div class="presentation-text">
                 <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez les restaurants d'exception, sélectionnés par nos soins</p>
-                <button class="presentation-button linear-gradient">Explorer nos restaurants</button>
+                <p>Découvrez les restaurants d'exception, sélectionnés par nos soins.</p>
+                <button class="explore-button linear-gradient">Explorer nos restaurants</button>
             </div>
 
         </section>
