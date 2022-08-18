@@ -1,8 +1,9 @@
-/*******************  TABLET   **********************/
+/*******************  TABLET    **********************/
 
 
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    
     .restaurants-container {
         display: flex;
         justify-content: center;
@@ -10,42 +11,29 @@
     }
 
     body {
-
-/*        background: red;*/
+        /*        background: red;*/
+        /*        for testing purposes*/
     }
-    
-    
+
+
     .fonctionnement-card {
-        
         max-width: 75%;
     }
 
     .fonctionnement h2 {
         text-align: center;
         font-size: 1.4em;
-
     }
-    
-    
+
     .restaurant-title h4 {
-
-    text-align: center;
-    font-size: 1.4em;
-
-}
-    
-    
-
-
-     .restaurant-menu {
-       
-        margin: auto;
-        
-        max-width: 50%;
-
-     
+        text-align: center;
+        font-size: 1.4em;
     }
-    
+
+    .restaurant-menu {
+        margin: auto;
+        max-width: 75%;
+    }
+
 
 }
-
