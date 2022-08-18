@@ -293,7 +293,7 @@ button {
   border-radius: 35px 35px 0 0;
   margin-top: -50px;
   padding-bottom: 50px;
-  z-index: 1;
+/*  z-index: 1;*/
   position: relative;
 }
 .restaurant-menu-title {
@@ -303,7 +303,9 @@ button {
   padding: 20px 30px 20px 20px;
 }
 
-.starter-list, .main-dishes-list, .dessert-list {
+.starter-list,
+.main-dishes-list,
+.dessert-list {
   margin: 20px;
 }
 

@@ -13,6 +13,12 @@
 
 /*        background: red;*/
     }
+    
+    
+    .fonctionnement-card {
+        
+        max-width: 75%;
+    }
 
     .fonctionnement h2 {
         text-align: center;
@@ -27,7 +33,19 @@
     font-size: 1.4em;
 
 }
+    
+    
 
+
+     .restaurant-menu {
+       
+        margin: auto;
+        
+        max-width: 50%;
+
+     
+    }
+    
 
 }
 
