@@ -216,15 +216,21 @@
   padding: 30px 20px;
 }
 
-.starter-element, .main-dishes-element, .dessert-element {
+.starter-element, 
+.main-dishes-element,
+.dessert-element {
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
-.starter-element-information p, .main-dishes-element-information p, .dessert-element-information p {
+.starter-element-information p,
+.main-dishes-element-information p,
+.dessert-element-information p {
   text-overflow: ellipsis;
 }
-.starter-element .check-block, .main-dishes-element .check-block, .dessert-element .check-block {
+.starter-element .check-block, 
+.main-dishes-element .check-block, 
+.dessert-element .check-block {
   width: 60px;
   height: 100%;
   background-color: #99E2D0;
