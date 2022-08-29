@@ -2,10 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Shrikhand&display=swap');
 
 
-/*MAIN*/
-
-
-
+/*******************  MOBILE/MAIN VERSION **********************/
 
 * {
     box-sizing: border-box;
@@ -40,44 +37,29 @@ h3 {
     font-size: 14px;
 }
 
-.underline {
-    width: 42px;
-    height: 3px;
-    background-color: #99E2D0;
-    margin-top: 8px;
-}
-
-
-
 .header-index {
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px #b4b4b4;
+    
 }
 
-/*SEARCH FORM*/
+/*******************  SEARCH FORM **********************/
 
 .search-form {
     background-color: #eaeaea;
-    /*  border-top: solid 4px #cecece;*/
-
-    /*    A VERIFIER*/
-
-
-    box-shadow: inset 0px 2px 5px 2px #cbcbcb;
-
     padding: 20px;
-    margin-top: 15px;
+    margin-top: 0px;
     font-size: 1.2em;
     text-align: center;
-
 }
 
 input {
     border: none;
     background-color: #eaeaea;
     text-align: center;
-
-
 }
 
 ::placeholder {
@@ -147,6 +129,7 @@ input {
 
 
 /************* FONCTIONNEMENT **********/
+
 .fonctionnement {
     font-size: 22px;
 }
@@ -191,8 +174,6 @@ input {
 
 .fonctionnement-card:hover i {
     color: #9356DC;
-
-
 }
 
 
@@ -263,6 +244,9 @@ input {
     border-top-right-radius: 25px;
 }
 
+
+/*----------------------NEW RESTAURANT  INDICATOR (BLINKING)-------------------------*/
+
 .restaurant-new-indicator {
     animation: blinker 1s linear infinite;
     position: absolute;
@@ -276,7 +260,6 @@ input {
 }
 
 @keyframes blinker {
-
     10% {
         opacity: 0.5;
     }
@@ -284,7 +267,7 @@ input {
 }
 
 
-/*----------------------RESTAURANT PAGES -------------------------*/
+/*----------------------RESTAURANT PAGES-------------------------*/
 
 .presentation-menu-img {
     width: 100%;
@@ -298,7 +281,6 @@ input {
     border-radius: 35px 35px 0 0;
     margin-top: -50px;
     padding-bottom: 50px;
-    /*  z-index: 1;*/
     position: relative;
 }
 
@@ -380,18 +362,24 @@ input {
     font-size: 1.05em;
 }
 
+.underline {
+    width: 42px;
+    height: 3px;
+    background-color: #99E2D0;
+    margin-top: 8px;
+}
 
 
 
 
 
-/* FOOTER */
+
+/*----------------------FOOTER-------------------------*/
 
 .footer {
     background-color: #353535;
     height: auto;
     padding-bottom: 20px;
-
 }
 
 .footer_element {
@@ -413,7 +401,6 @@ input {
 
 .footer_element-text {
     margin-left: 10px;
-    /* margin-top: 20px; */
 }
 
 .footer_element-img {
