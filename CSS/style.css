@@ -245,7 +245,7 @@ input {
 }
 
 
-/*----------------------NEW RESTAURANT  INDICATOR (BLINKING)-------------------------*/
+/*----------------------NEW RESTAURANT  INDICATOR (BLINKER)-------------------------*/
 
 .restaurant-new-indicator {
     animation: blinker 1s linear infinite;
@@ -254,14 +254,25 @@ input {
     right: 5%;
     z-index: 1;
     background-color: #99E2D0;
-    color: #008766;
+    color: #018766;
     padding: 5px;
     font-size: 0.7em;
+    font-weight: 500;
+    border-radius: 3px;
 }
 
 @keyframes blinker {
     10% {
         opacity: 0.5;
+    }
+     20% {
+        opacity: 1;
+    }
+     30% {
+        opacity: 0.5;
+    }
+     40% {
+        opacity: 1;
     }
 
 }

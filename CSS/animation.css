@@ -27,7 +27,6 @@
 }
 
 .loading-spheres {
-  /* display:block; */
   position: relative;
   top:50%;
   left: calc(50% - 40px); 
@@ -40,7 +39,6 @@
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  /* background: rgb(224, 32, 32); */
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .loading-spheres div:nth-child(1) {
@@ -102,7 +100,6 @@
 
 .heart_empty {
   position: absolute;
-/*  -webkit-text-stroke: 1px white;*/
   transition: 0.5s ease;
 }
 .heart_full {
