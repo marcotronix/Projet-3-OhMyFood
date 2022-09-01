@@ -375,7 +375,17 @@ input {
     align-items: center;
     width: 220px;
     font-size: 1.05em;
+    box-shadow: 2px 2px 2px #bbbbbb;
+    transition:  0.5s;
 }
+
+.order-button:hover {
+    background: linear-gradient(#fface8, #ae80e5);
+    transform: scale(1.02);
+    box-shadow: 5px 5px 5px #bbbbbb;
+    transition:  0.5s;
+
+}   
 
 .underline {
     width: 42px;
